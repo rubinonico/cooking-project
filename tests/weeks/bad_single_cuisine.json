@@ -1,0 +1,51 @@
+{
+  "week_id": "test-bad-c5-001",
+  "serves": 2,
+  "meals_per_week": 2,
+  "notes": "Fails C5: single cuisine (italian) when min_cuisines=3 defaulted",
+  "grocery_haul": [
+    { "ingredient": "garlic", "display": "Garlic", "special_order": false },
+    { "ingredient": "olive_oil", "display": "Olive oil", "special_order": false },
+    { "ingredient": "pasta", "display": "Pasta", "special_order": false },
+    { "ingredient": "tomato_sauce", "display": "Tomato sauce", "special_order": false }
+  ],
+  "dishes": [
+    {
+      "dish_id": "dish-001",
+      "name": "Spaghetti",
+      "cuisine": "italian",
+      "ingredients": ["pasta", "tomato_sauce"],
+      "day1_parts": [
+        { "part": "sauce", "action": "make sauce", "holds_days": 2 }
+      ],
+      "serve_day_parts": [
+        { "part": "cook", "action": "cook pasta, heat sauce" }
+      ],
+      "source_entry": "Italian"
+    },
+    {
+      "dish_id": "dish-002",
+      "name": "Garlic Bread",
+      "cuisine": "italian",
+      "ingredients": ["bread", "garlic", "olive_oil"],
+      "day1_parts": [
+        { "part": "garlic-butter", "action": "mix garlic with butter", "holds_days": 2 }
+      ],
+      "serve_day_parts": [
+        { "part": "toast", "action": "spread on bread and toast" }
+      ],
+      "source_entry": "Italian – Bread"
+    }
+  ],
+  "overlap": {
+    "pool_size": 6,
+    "shared_by_two_or_more": 1,
+    "overlap_ratio": 0.1667,
+    "single_use_ingredients": ["bread", "garlic", "olive_oil", "pasta", "tomato_sauce"]
+  },
+  "prep_level": {
+    "total_prep_tasks": 4,
+    "band": null,
+    "band_note": "Test fixture."
+  }
+}

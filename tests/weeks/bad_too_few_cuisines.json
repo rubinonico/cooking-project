@@ -1,0 +1,64 @@
+{
+  "week_id": "test-bad-c5b-001",
+  "serves": 2,
+  "meals_per_week": 3,
+  "notes": "Fails C5: 2 cuisines when min_cuisines=3 defaulted",
+  "grocery_haul": [
+    { "ingredient": "garlic", "display": "Garlic", "special_order": false },
+    { "ingredient": "pasta", "display": "Pasta", "special_order": false },
+    { "ingredient": "chicken", "display": "Chicken", "special_order": false },
+    { "ingredient": "cream", "display": "Cream", "special_order": false }
+  ],
+  "dishes": [
+    {
+      "dish_id": "dish-001",
+      "name": "Pasta Alfredo",
+      "cuisine": "italian-american",
+      "ingredients": ["pasta", "cream", "garlic"],
+      "day1_parts": [
+        { "part": "sauce", "action": "make cream sauce", "holds_days": 2 }
+      ],
+      "serve_day_parts": [
+        { "part": "toss", "action": "cook pasta, toss with sauce" }
+      ],
+      "source_entry": "Test"
+    },
+    {
+      "dish_id": "dish-002",
+      "name": "Chicken Alfredo",
+      "cuisine": "italian-american",
+      "ingredients": ["chicken", "pasta", "cream", "garlic"],
+      "day1_parts": [
+        { "part": "marinate", "action": "season chicken", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "cook", "action": "sear chicken, make sauce, toss" }
+      ],
+      "source_entry": "Test"
+    },
+    {
+      "dish_id": "dish-003",
+      "name": "Tomato Pasta",
+      "cuisine": "italian",
+      "ingredients": ["pasta", "tomato_sauce"],
+      "day1_parts": [
+        { "part": "sauce", "action": "heat sauce", "holds_days": 3 }
+      ],
+      "serve_day_parts": [
+        { "part": "toss", "action": "cook pasta, toss with sauce" }
+      ],
+      "source_entry": "Test"
+    }
+  ],
+  "overlap": {
+    "pool_size": 5,
+    "shared_by_two_or_more": 2,
+    "overlap_ratio": 0.4,
+    "single_use_ingredients": ["chicken", "tomato_sauce"]
+  },
+  "prep_level": {
+    "total_prep_tasks": 5,
+    "band": null,
+    "band_note": "Test fixture."
+  }
+}

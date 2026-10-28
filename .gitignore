@@ -1,0 +1,19 @@
+# Data and corpora are excluded — see docs/PUBLISHING.md for why.
+# Three of the four source corpora carry no stated licence and one is a copyrighted book.
+data/
+sources/
+out/
+.scratch/
+{e[canonical]}/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local / editor
+.vscode/
+.idea/
+*.log
+.DS_Store

@@ -1,0 +1,67 @@
+{
+  "week_id": "test-good-001",
+  "serves": 2,
+  "meals_per_week": 3,
+  "grocery_haul": [
+    { "ingredient": "garlic", "display": "Garlic", "quantity": "1 head", "shelf_stable": true, "special_order": false },
+    { "ingredient": "olive_oil", "display": "Olive oil", "quantity": null, "shelf_stable": true, "special_order": false },
+    { "ingredient": "tomato_sauce", "display": "Tomato sauce", "quantity": "2 cups", "shelf_stable": true, "special_order": false },
+    { "ingredient": "basil", "display": "Basil", "quantity": "1 bunch", "shelf_stable": null, "special_order": false },
+    { "ingredient": "coconut_milk", "display": "Coconut milk", "quantity": "2 cans", "shelf_stable": true, "special_order": false },
+    { "ingredient": "chicken", "display": "Chicken breast", "quantity": "4", "shelf_stable": false, "special_order": false }
+  ],
+  "dishes": [
+    {
+      "dish_id": "dish-001",
+      "name": "Pasta al Pomodoro",
+      "cuisine": "italian",
+      "ingredients": ["garlic", "olive_oil", "tomato_sauce", "basil"],
+      "day1_parts": [
+        { "part": "sauce", "action": "simmer garlic in olive oil, add tomato sauce, season", "holds_days": 2 },
+        { "part": "basil", "action": "chiffonade basil", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "cook and serve", "action": "cook pasta, reheat sauce, toss with basil" }
+      ],
+      "source_entry": "Italian – Pasta"
+    },
+    {
+      "dish_id": "dish-002",
+      "name": "Quick Thai Curry",
+      "cuisine": "thai",
+      "ingredients": ["garlic", "olive_oil", "coconut_milk", "chicken", "basil"],
+      "day1_parts": [
+        { "part": "curry-base", "action": "slice chicken, portion coconut milk", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "cook", "action": "fry garlic in oil, add chicken, coconut milk, simmer, finish with basil" }
+      ],
+      "source_entry": "Thai – Curries"
+    },
+    {
+      "dish_id": "dish-003",
+      "name": "Chicken in Tomato-Coconut Sauce",
+      "cuisine": "american",
+      "ingredients": ["chicken", "tomato_sauce", "coconut_milk"],
+      "day1_parts": [
+        { "part": "sauce-base", "action": "mix tomato sauce and coconut milk, season", "holds_days": 2 }
+      ],
+      "serve_day_parts": [
+        { "part": "cook", "action": "sear chicken, add sauce, simmer 20 min" }
+      ],
+      "source_entry": "American – Poultry"
+    }
+  ],
+  "overlap": {
+    "pool_size": 6,
+    "shared_by_two_or_more": 6,
+    "overlap_ratio": 1.0,
+    "single_use_ingredients": []
+  },
+  "prep_level": {
+    "total_prep_tasks": 6,
+    "band": null,
+    "band_note": "Barrie's band rubric is unpublished. Cannot assign a 1-15 score."
+  },
+  "notes": "Passes all C1-C5: 3 cuisines (italian, thai, american), zero single-use, all 6 ingredients shared ≥2 ways."
+}

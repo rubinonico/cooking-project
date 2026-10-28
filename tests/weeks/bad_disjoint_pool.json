@@ -1,0 +1,50 @@
+{
+  "week_id": "test-bad-disjoint-001",
+  "serves": 2,
+  "meals_per_week": 2,
+  "grocery_haul": [
+    { "ingredient": "chicken", "display": "Chicken breast", "special_order": false },
+    { "ingredient": "garlic", "display": "Garlic", "special_order": false },
+    { "ingredient": "salmon", "display": "Salmon fillet", "special_order": false },
+    { "ingredient": "dill", "display": "Fresh dill", "special_order": false }
+  ],
+  "dishes": [
+    {
+      "dish_id": "dish-001",
+      "name": "Garlic Chicken",
+      "cuisine": "american",
+      "ingredients": ["chicken", "garlic"],
+      "day1_parts": [
+        { "part": "season", "action": "season chicken with garlic", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "roast", "action": "roast at 400F for 25 min" }
+      ],
+      "source_entry": "American – Poultry"
+    },
+    {
+      "dish_id": "dish-002",
+      "name": "Dill Salmon",
+      "cuisine": "american",
+      "ingredients": ["salmon", "dill"],
+      "day1_parts": [
+        { "part": "dill-butter", "action": "mix softened butter with chopped dill", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "pan-sear", "action": "sear salmon 4 min per side, top with dill butter" }
+      ],
+      "source_entry": "American – Seafood"
+    }
+  ],
+  "overlap": {
+    "pool_size": 4,
+    "shared_by_two_or_more": 0,
+    "overlap_ratio": 0.0,
+    "single_use_ingredients": ["chicken", "dill", "garlic", "salmon"]
+  },
+  "prep_level": {
+    "total_prep_tasks": 4,
+    "band": null,
+    "band_note": "Barrie's band rubric is unpublished."
+  }
+}

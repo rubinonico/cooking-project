@@ -1,0 +1,4 @@
+  File "<string>", line 13
+    print(fUNRESOLVED:
+                     ^
+SyntaxError: invalid syntax

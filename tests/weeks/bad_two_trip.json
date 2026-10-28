@@ -1,0 +1,50 @@
+{
+  "week_id": "test-bad-two-trip-001",
+  "serves": 2,
+  "meals_per_week": 2,
+  "grocery_haul": [
+    { "ingredient": "garlic", "display": "Garlic", "special_order": false },
+    { "ingredient": "olive_oil", "display": "Olive oil", "special_order": false },
+    { "ingredient": "lemon", "display": "Lemon", "special_order": false },
+    { "ingredient": "saffron", "display": "Saffron threads", "special_order": true }
+  ],
+  "dishes": [
+    {
+      "dish_id": "dish-001",
+      "name": "Lemon Garlic Chicken",
+      "cuisine": "italian",
+      "ingredients": ["garlic", "olive_oil", "lemon"],
+      "day1_parts": [
+        { "part": "marinade", "action": "mix oil, lemon, garlic", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "sear", "action": "sear chicken" }
+      ],
+      "source_entry": "Italian – Chicken"
+    },
+    {
+      "dish_id": "dish-002",
+      "name": "Garlic Dressing",
+      "cuisine": "italian",
+      "ingredients": ["garlic", "olive_oil", "lemon"],
+      "day1_parts": [
+        { "part": "base", "action": "mince garlic", "holds_days": 1 }
+      ],
+      "serve_day_parts": [
+        { "part": "whisk", "action": "whisk" }
+      ],
+      "source_entry": "Italian – Dressings"
+    }
+  ],
+  "overlap": {
+    "pool_size": 3,
+    "shared_by_two_or_more": 3,
+    "overlap_ratio": 1.0,
+    "single_use_ingredients": []
+  },
+  "prep_level": {
+    "total_prep_tasks": 4,
+    "band": null,
+    "band_note": "Barrie's band rubric is unpublished."
+  }
+}
